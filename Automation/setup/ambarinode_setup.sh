@@ -298,8 +298,6 @@ localize_cluster_file
 
 initialize_blueprint
 
-kave_install
-
 wait_for_ambari
 
 patch_ambari

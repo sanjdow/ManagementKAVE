@@ -1,14 +1,14 @@
  {
-	"blueprint": "KAVEAzure",
+	"blueprint": "ManagementKAVEAzure",
 	"default_password": "admin",
 	"host_groups": [{
 		"name": "admin",
 		"configurations": [],
 		"hosts": [{
-			"fqdn": "ambari.kave.io"
+			"fqdn": "ambari.mkave.io"
 		}]
 	}, {
-		"name": "gateway",
+		"name": "ambari",
 		"configurations": [{
 			"kavelanding": {
 				"AMBARI_ADMIN": "admin",
@@ -16,35 +16,31 @@
 			}
 		}],
 		"hosts": [{
-			"fqdn": "gate.kave.io"
+			"fqdn": "ambari.mkave.io"
 		}]
 	}, {
-		"name": "namenode-1",
+		"name": "jenkins",
 		"configurations": [],
 		"hosts": [{
-			"fqdn": "nno-0.kave.io"
+			"fqdn": "jenkins.mkave.io"
 		}]
 	}, {
-		"name": "namenode-2",
+		"name": "dev",
 		"configurations": [],
 		"hosts": [{
-			"fqdn": "nno-1.kave.io"
+			"fqdn": "dev.mkave.io"
 		}]
 	}, {
-		"name": "data",
+		"name": "gitlab",
 		"configurations": [],
 		"hosts": [{
-			"fqdn": "data-0.kave.io"
-		}, {
-			"fqdn": "data-1.kave.io"
-		}, {
-			"fqdn": "data-2.kave.io"
+			"fqdn": "gitlab.mkave.io"
 		}]
 	}, {
-		"name": "ci",
+		"name": "rep",
 		"configurations": [],
 		"hosts": [{
-			"fqdn": "ci.kave.io"
+			"fqdn": "rep.mkave.io"
 		}]
 	}]
 }
